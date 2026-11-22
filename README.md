@@ -1,6 +1,6 @@
 # Second Ink 后端 v0.4
 
-Second Ink 独立后端工程，位于现有工作区的 `second-ink-backend` 子目录。提供业务基础、材料补正、文档审阅、Skill 和可配置单 Agent 流程，供前端联调使用。
+Second Ink 独立后端工程，提供业务基础、材料补正、文档审阅、Skill 和可配置单 Agent 流程，供前端联调使用。
 
 v0.4 增加生效材料选择、五分钟微调预览、历史运行分支、判定级局部复验、唯一执行头和跨分支模型预算。原件和历史检查点保留，报告重新生成后仍须人工审阅与确认发布。接口、升级与联调流程见 [API-V4.md](docs/API-V4.md)。
 
@@ -10,10 +10,9 @@ v0.2 完整流程为：上传材料 → 人工修正 → RULES 重新核验 → 
 
 ## 启动
 
-需要 Node.js 24.14 或更高版本。在 PowerShell 中执行：
+需要 Node.js 24.14 或更高版本。在仓库根目录用 PowerShell 执行：
 
 ```powershell
-Set-Location 'D:\code\workflow-agent-backend\second-ink-backend'
 npm ci
 npm run build
 npm start

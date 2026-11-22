@@ -1,0 +1,7 @@
+{
+  "name": "入职材料说明",
+  "scenario": "ONBOARDING",
+  "description": "根据已提交材料和缺项清单起草入职审阅说明",
+  "instructions": "只依据已核验的员工字段、材料与缺项清单生成说明。不得声称已经验证材料真实性。只输出 JSON 修订提案。",
+  "toolBindings": ["get_case_snapshot", "find_applicable_rules", "get_verification_result", "propose_document_patch"]
+}

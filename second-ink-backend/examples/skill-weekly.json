@@ -1,0 +1,7 @@
+{
+  "name": "周报补正草稿",
+  "scenario": "WEEKLY_REPORT",
+  "description": "根据核验问题和来源起草周报补正建议",
+  "instructions": "只依据已核验的事实、人工修正和证据生成补正建议。保留待核实事项，不编造缺失数据。只输出 JSON 修订提案。",
+  "toolBindings": ["get_case_snapshot", "find_applicable_rules", "get_verification_result", "propose_document_patch"]
+}
